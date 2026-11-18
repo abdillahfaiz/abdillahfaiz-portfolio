@@ -58,7 +58,8 @@ export const ASSETS = {
   wallpaperLight: '/src/assets/images/macos_wallpaper_light_1794884732808.jpg',
   portrait: '/assets/aistudio/DSCF821g1__1__fb04e0a3.jpg',
   portraitCutout: '/assets/aistudio/DSCF8211__1_-removebg_124896eb.png',
-  cvPdf: '/assets/aistudio/Abdillah_Faiz_s_CV_-_Mobile_Apps_Developer_1c8c3100.pdf',
+  cvPdf: '/assets/aistudio/Abdillah_Faiz_s_CV_Final_cc9ddf9d.pdf',
+  cvPreview: '/assets/portfolio/cv-final-preview.png',
   portfolioPdf: '/assets/aistudio/Abdillah_Faiz_Portfolio00_2cd1e03d.pdf',
 };
 
@@ -70,7 +71,7 @@ export const PROFILE = {
     "I'm Abdillah Faiz, a Mid-Level Flutter Developer with 3 years of experience expanding into Backend Engineering.",
   heroDescription:
     'Proficient in Flutter, Dart, Clean Architecture, BLoC, Kotlin Platform Channels, CI/CD pipelines, and Google Play Store releases—currently expanding full-stack capabilities with NestJS and Go.',
-  techBadges: ['Flutter', 'Dart', 'Kotlin', 'TypeScript', 'NestJS', 'Go'],
+  techBadges: ['Dart', 'Flutter', 'Android'],
   email: 'abdillahdotfaizz@gmail.com',
   phone: '+6285894618922',
   githubHandle: '@abdillahfaiz',
@@ -193,6 +194,98 @@ export const PROJECTS: ProjectItem[] = [
     externalLabel: 'Google Play',
     hasLiveDemo: true,
     demoPreviewNote: 'Live on Google Play Store (com.sippra_jabar.mobile)',
+  },
+  {
+    id: 'hallo-al-madinah',
+    name: 'Hallo Al Madinah',
+    category: 'Published',
+    tagline: 'Google Play Store · SIT Al-Madinah Bogor Portal',
+    description:
+      'Mobile school portal and QR attendance application for SIT Al-Madinah Bogor across TKIT, SDIT, SMPIT, and SMAIT units—published on Google Play Store.',
+    longDescription:
+      'Hallo Al Madinah connects students, teachers, and parents across SIT Al-Madinah Bogor academic units (TKIT, SDIT, SMPIT, and SMAIT Al-Madinah in Cibinong, Bogor). Built with Flutter and published on Google Play Store (com.almadinah.bogor.mobile), the app provides unit-scoped portals, prayer time schedules and qibla direction, QR code scanning for attendance (Absen Masuk, Absen Keluar, Riwayat Absen), educational media (Podcast, Film Produksi, News, Budaya, Cerita, Sejarah), religious modules, and school agendas.',
+    stack: ['Flutter', 'Dart', 'QR Scanner', 'REST API', 'Google Play'],
+    highlights: [
+      'Published on Google Play Store (com.almadinah.bogor.mobile) serving TKIT, SDIT, SMPIT & SMAIT Al-Madinah Bogor',
+      'Built-in QR Code scanner for student and staff attendance (Absen Masuk, Absen Keluar & Riwayat Absen)',
+      'School information portal featuring prayer times, qibla compass, public agenda, and Media hub (Podcast, Film, News, Budaya)',
+    ],
+    architectureNotes: [
+      'Multi-unit school selector scoping portal data, profiles, and schedules across TKIT, SDIT, SMPIT, and SMAIT',
+      'Camera QR scanning workflow integrated with attendance check-in/out endpoints and log history',
+      'Modular Flutter feature layers with RESTful API sync and production Google Play release setup',
+    ],
+    image: '/assets/aistudio/almadinah_b03a4623.webp',
+    gallery: [
+      {
+        src: '/assets/aistudio/almadinah_b03a4623.webp',
+        caption: 'Beranda & Informasi Sekolah (Your Information School)',
+      },
+      {
+        src: '/assets/aistudio/almadinah2_b94708b9.webp',
+        caption: 'Pilih Unit Sekolah — TKIT, SDIT, SMPIT & SMAIT',
+      },
+      {
+        src: '/assets/aistudio/almadinah4_fe581f3e.webp',
+        caption: 'QR Code Scanner — Absen Masuk, Keluar & Riwayat',
+      },
+      {
+        src: '/assets/aistudio/almadinah3_04b43270.webp',
+        caption: 'Media Edukasi — Podcast, Film, News & Budaya',
+      },
+    ],
+    externalUrl: 'https://play.google.com/store/apps/details?id=com.almadinah.bogor.mobile&hl=id',
+    externalLabel: 'Google Play',
+    hasLiveDemo: true,
+    demoPreviewNote: 'Live on Google Play Store (com.almadinah.bogor.mobile)',
+  },
+  {
+    id: 'halo-aysha',
+    name: 'Halo Aysha',
+    category: 'Published',
+    tagline: 'Google Play Store · RS Islam Aysha Hospital App',
+    description:
+      'Mobile healthcare & outpatient registration app for RS Islam Aysha Bogor featuring doctor appointment booking (Umum, Asuransi, BPJS), MCU/lab booking, and 24-hour IGD access.',
+    longDescription:
+      'Halo Aysha brings Islamic and professional healthcare services from RS Islam Aysha Bogor directly to patients on Android. Built with Flutter and published on Google Play Store (com.halo_aysha.mobile), the app streamlines outpatient clinic appointments across Umum, Insurance, and BPJS Kesehatan patients alongside Medical Check-Up (MCU), Laboratory, Radiology bookings, medical records access, 24-hour IGD emergency contacts, and hospital facility directories.',
+    stack: ['Flutter', 'Dart', 'REST API', 'Healthcare Booking', 'Google Play'],
+    highlights: [
+      'Published on Google Play Store (com.halo_aysha.mobile) for RS Islam Aysha patient services',
+      'Online polyclinic appointment booking supporting Pasien Umum, Pasien Asuransi, and BPJS Kesehatan flows',
+      'Direct access to MCU, Laboratory, Radiology bookings, 24-hour IGD contacts, and medical facility guides',
+    ],
+    architectureNotes: [
+      'Multi-step patient booking flow validating 16-digit NIK, WhatsApp contact, insurance/BPJS data, and live clinic schedules',
+      'Authenticated patient portal with registration, password recovery, member records, and activity notifications',
+      'Production Android build & Google Play Store deployment pipeline (Blis Sinergi Inovasi)',
+    ],
+    image: '/assets/portfolio/halo-aysha-1.webp',
+    gallery: [
+      {
+        src: '/assets/portfolio/halo-aysha-1.webp',
+        caption: 'Beranda — Layanan RS Islam Aysha & IGD 24 Jam',
+      },
+      {
+        src: '/assets/portfolio/halo-aysha-2.webp',
+        caption: 'Masuk & Daftar Akun Pasien',
+      },
+      {
+        src: '/assets/portfolio/halo-aysha-4.webp',
+        caption: 'Janji Temu Poliklinik — Umum, Asuransi & BPJS',
+      },
+      {
+        src: '/assets/portfolio/halo-aysha-5.webp',
+        caption: 'Formulir Identitas & Atur Jadwal Konsultasi',
+      },
+      {
+        src: '/assets/portfolio/halo-aysha-3.webp',
+        caption: 'Informasi Fasilitas & Layanan Medis (Fisioterapi & Radiologi)',
+      },
+    ],
+    externalUrl: 'https://play.google.com/store/apps/details?id=com.halo_aysha.mobile&hl=id',
+    externalLabel: 'Google Play',
+    hasLiveDemo: true,
+    demoPreviewNote: 'Live on Google Play Store (com.halo_aysha.mobile)',
   },
   {
     id: 'lacee-pos',
@@ -322,35 +415,57 @@ export const PROJECTS: ProjectItem[] = [
     id: 'sbt-auth',
     name: 'SBT Auth App (SIA UAD)',
     category: 'Corporate & AI',
-    tagline: 'Passwordless Web3 / Soulbound Token Login',
+    tagline: 'Passwordless MetaMask & Soulbound Token Login',
     description:
-      'Academic Information System (SIA UAD) Flutter application implementing passwordless authentication using Polygon Web3 wallets and Soulbound Tokens (SBT).',
+      'Academic Information System (SIA UAD) Flutter application implementing passwordless authentication via MetaMask wallet connection and Soulbound Tokens (SBT) on Polygon.',
     longDescription:
-      'Built as a corporate security-focused Flutter application for SIA UAD, SBT Auth replaces traditional password logins with cryptographic Web3 wallet verification and Soulbound Tokens (SBT) on Polygon. Students connect their digital wallet, verify academic identity via SBT, view GPA and credit progress, check daily class schedules, and manage wallet connection security.',
-    stack: ['Flutter', 'Dart', 'Web3 / Polygon', 'Soulbound Token', 'Auth'],
+      'Built as a corporate security-focused Flutter application for SIA UAD, SBT Auth replaces traditional password logins with passwordless MetaMask authentication and Soulbound Token (SBT) identity verification on Polygon. Students connect their MetaMask wallet, verify academic credentials via SBT, view cumulative GPA and credit progress, inspect daily class schedules, and manage connected Polygon wallet sessions.',
+    stack: ['Flutter', 'Dart', 'MetaMask', 'Polygon / Web3', 'Soulbound Token'],
     highlights: [
-      'Passwordless authentication flow connecting digital wallets and verifying SBT credentials',
+      'Passwordless authentication connecting MetaMask wallet and verifying academic Soulbound Token (SBT) credentials',
       'Student academic dashboard displaying cumulative GPA, passed credits, and daily class schedule',
-      'Wallet connection management screen showing Polygon address status and secure sign-out',
+      'Profile and security management displaying connected Polygon wallet address and safe sign-out',
     ],
     architectureNotes: [
-      'Decoupled Web3 wallet connector & SBT verification service behind clean repository interfaces',
-      'Secure local session state keeping wallet address bindings tamper-resistant',
+      'Decoupled MetaMask wallet connector & SBT verification service behind clean repository interfaces',
+      'Secure local session state keeping Polygon wallet address bindings tamper-resistant',
       'Clear status feedback transitions (Wallet Not Connected -> Ready to Login -> Verified Profile)',
     ],
     image: '/assets/portfolio/sbt-auth.jpg',
+    gallery: [
+      {
+        src: '/assets/portfolio/sbt-auth.jpg',
+        caption: 'Ringkasan Tampilan Autentikasi MetaMask & SBT',
+      },
+      {
+        src: '/assets/aistudio/sbt1_9f372488.png',
+        caption: 'Passwordless Login — Connect MetaMask Wallet',
+      },
+      {
+        src: '/assets/aistudio/sbt2_600e79a0.png',
+        caption: 'Ready to Login — Verifikasi Identitas via SBT',
+      },
+      {
+        src: '/assets/aistudio/sbt3_9e4bf8b3.png',
+        caption: 'Dashboard Akademik — IPK, SKS & Jadwal Kuliah',
+      },
+      {
+        src: '/assets/aistudio/sbt4_8683e6a5.png',
+        caption: 'User Profile — Status Mahasiswa & Polygon Wallet',
+      },
+    ],
     hasLiveDemo: false,
-    demoPreviewNote: 'Passwordless Web3 SBT academic authentication showcase',
+    demoPreviewNote: 'Passwordless MetaMask & Web3 SBT authentication showcase',
   },
   {
     id: 'general-affair',
-    name: 'General Affair App',
+    name: 'Harmonee (General Affair App)',
     category: 'POS & Operations',
     tagline: 'Hospital Facility Maintenance & Inspection',
     description:
       'Flutter operations app for hospital general-affair maintenance staff (RS Primaya Makassar) covering preventive checklists, genset load forms, drafts, and schedules.',
     longDescription:
-      'General Affair App empowers hospital maintenance teams to execute daily and monthly preventive maintenance inspections across critical facilities including AC units, UPS systems, electrical panels, STP, vacuum pumps, PABX, and genset load testing. Technicians can filter tasks (To Do, Done, Missed), fill structured inspection checklists, save drafts locally, and audit activity history.',
+      'Harmonee (General Affair App) empowers hospital maintenance teams to execute daily and monthly preventive maintenance inspections across critical facilities including AC units, UPS systems, electrical panels, STP, vacuum pumps, PABX, and genset load testing. Technicians can filter tasks (To Do, Done, Missed), fill structured inspection checklists, save drafts locally, and audit activity history.',
     stack: ['Flutter', 'Dart', 'Offline Drafts', 'Forms', 'REST API'],
     highlights: [
       'Structured preventive maintenance checklists for AC, UPS, electrical panels, and genset load tests',
@@ -363,6 +478,28 @@ export const PROJECTS: ProjectItem[] = [
       'Role-scoped hospital location switcher and recent maintenance activity audit trail',
     ],
     image: '/assets/portfolio/general-affair.jpg',
+    gallery: [
+      {
+        src: '/assets/portfolio/general-affair.jpg',
+        caption: 'Ringkasan Tampilan Aplikasi Harmonee',
+      },
+      {
+        src: '/assets/aistudio/harmonee3_1e96f73b.png',
+        caption: 'Beranda — Daftar Tugas Bulanan & Riwayat Aktivitas',
+      },
+      {
+        src: '/assets/aistudio/harmonee2_bceb9127.png',
+        caption: 'Jadwal Tugas Harian (To Do, Done & Missed)',
+      },
+      {
+        src: '/assets/aistudio/harmonee4_0a2938e9.png',
+        caption: 'Input Tugas — Ceklis Pemeliharaan AC',
+      },
+      {
+        src: '/assets/aistudio/harmonee1_4ceadedf.png',
+        caption: 'Input Tugas — Form Test Beban Genset & Draft',
+      },
+    ],
     hasLiveDemo: false,
     demoPreviewNote: 'Hospital maintenance & inspection workflow showcase',
   },
@@ -387,6 +524,28 @@ export const PROJECTS: ProjectItem[] = [
       'Verified transaction IDs and automated payment expiration timers in checkout details',
     ],
     image: '/assets/portfolio/laundry-app.jpg',
+    gallery: [
+      {
+        src: '/assets/portfolio/laundry-app.jpg',
+        caption: 'Ringkasan Tampilan Laundry App (Drop & Go)',
+      },
+      {
+        src: '/assets/aistudio/laundry1_48a09440.png',
+        caption: 'Beranda — Mulai Drop & Go, Active Order & Outlet Terdekat',
+      },
+      {
+        src: '/assets/aistudio/laundry2_d6a02af8.png',
+        caption: 'Order Setup — Pilih Layanan, Durasi & Parfum',
+      },
+      {
+        src: '/assets/aistudio/laundry3_c221f6d6.png',
+        caption: 'Order Status — Pelacakan Proses & QR Pengambilan',
+      },
+      {
+        src: '/assets/aistudio/laundry4_032e3d07.png',
+        caption: 'Payment Details — Pembayaran BCA Virtual Account',
+      },
+    ],
     hasLiveDemo: false,
     demoPreviewNote: 'D4 Final Thesis — Drop & Go Laundry App (Politeknik IDN Bogor)',
   },

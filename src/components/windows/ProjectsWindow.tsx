@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import {
   ChevronRight,
-  Download,
   ExternalLink,
   Folder,
   FolderOpen,
   Layers,
   Play,
 } from 'lucide-react';
-import { ASSETS, PROJECTS, type ProjectItem } from '../../data/portfolioContent';
+import { PROJECTS, type ProjectItem } from '../../data/portfolioContent';
 import { ResilientImage } from '../ResilientImage';
 
 interface ProjectsWindowProps {
@@ -114,19 +113,9 @@ export function ProjectsWindow({ onSelectProject }: ProjectsWindowProps) {
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
-            <span className="tabular-nums text-xs font-medium text-[#64748B] dark:text-[#94A3B8]">
-              {filteredProjects.length} {filteredProjects.length === 1 ? 'item' : 'items'}
-            </span>
-            <a
-              href={ASSETS.portfolioPdf}
-              download="Abdillah_Faiz_Portfolio_Project.pdf"
-              className="inline-flex min-h-[32px] items-center gap-1.5 whitespace-nowrap rounded-lg border border-slate-900/12 bg-white/80 px-2.5 py-1 text-xs font-medium text-[#111827] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-white/15 dark:bg-white/10 dark:text-[#F1F5F9] dark:hover:bg-white/15"
-            >
-              <Download className="h-3.5 w-3.5 text-[#2563EB] dark:text-[#93C5FD]" />
-              <span>Portfolio PDF</span>
-            </a>
-          </div>
+          <span className="tabular-nums text-xs font-medium text-[#64748B] dark:text-[#94A3B8]">
+            {filteredProjects.length} {filteredProjects.length === 1 ? 'item' : 'items'}
+          </span>
         </div>
 
         {/* Finder Gallery Grid */}
